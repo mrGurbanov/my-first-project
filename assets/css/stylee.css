@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    box-sizing: border-box;
+}   
+a{text-decoration: none;}  
+        
+ul{list-style: none; } 
+
+header{
+    width: 100%;
+    height: 60px; 
+    padding: 16px;
+    left: 0;
+    top: 0;
+    position: fixed;
+    z-index: 1000;
+    background-color: white;
+
+   a {color: #0000008c;
+      transition: 150ms ease-in-out;
+      
+      &:hover{
+        color: rgba(0, 0, 0, 0.8)
+      }
+   }
+
+   span {
+    color: #1e30f3;
+    }
+   
+
+    .container {
+        width: 80%;
+        height: 100%;
+        margin-inline: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 700;
+        
+
+
+        .left{
+            font-size: 20px;
+            padding: 5px;
+        }
+
+        .right {
+            font-size: 14px;
+            ul{
+                display: flex;
+                li{
+                    padding: 8px;
+                    
+                }
+            }
+        }
+    }    
+}
+.hero{
+    background-color: white;
+    height: 100dvh;
+    position: relative;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+   
+    .hero_container {
+        width: 978px;
+        align-items: center; 
+    
+
+        .left_write {
+
+            .fon_write {
+               display: inline-block;
+                padding-block: 5px, 8px;
+                margin-bottom: 24px;
+                border-bottom-left-radius: 6px;
+                border-bottom-right-radius: 6px;
+                border-top-left-radius: 6px;
+                border-top-right-radius: 6px;
+                padding: 5px;
+                font-size: 12px;
+                font-weight: 700;
+                color: white;
+                background-image: linear-gradient( 140deg, rgb(30,48,238)0%,rgb(226, 30, 128) 100%);
+            }
+            .write_2 {
+                color: #6c757d;
+                font-size: 25px;
+                font-weight: 200;
+                line-height: 36px;
+            }
+            .write_h1_1 {
+                font-size: 45px;
+                font-weight: 700;
+                line-height: 53px; 
+            }
+
+            .btn{
+                line-height: 48px;
+
+            }
+            .left_btn{
+                color: white;
+                font-size: 16px;
+                line-height: 24px;
+                display: inline-block;
+                padding-top: 16px;
+                padding-left: 48px;
+                padding-right: 48px;
+                padding-bottom: 16px;
+                text-align: center;
+                margin-right: 16px;
+                background-color: #1e30f3;
+                border-bottom-left-radius: 6px;
+                border-bottom-right-radius: 6px;
+                border-top-left-radius: 6px;
+                border-top-right-radius: 6px;
+                
+                
+                
+               
+            }
+            .right_btn {
+                color: black;
+                font-size: 16px;
+                line-height: 24px;
+                display: inline-block;
+                padding-top: 16px;
+                padding-left: 48px;
+                padding-right: 48px;
+                padding-bottom: 16px;
+                text-align: center;
+                margin-right: 16px;
+                background-color: white;
+                border-bottom-left-radius: 6px;
+                border-bottom-right-radius: 6px;
+                border-top-left-radius: 6px;
+                border-top-right-radius: 6px;
+                border-bottom-color: rgb(33, 37, 41);
+                border-bottom-style: solid;
+                border-left-color: rgb(33, 37, 41);
+                border-left-style: solid;
+                border-right-color: rgb(33, 37, 41);
+                border-right-style: solid;
+                border-top-color: rgb(33, 37, 41);
+                border-top-style: solid;
+            }
+            
+        }
+    }
+}

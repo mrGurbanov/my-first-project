@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.divider {
+  margin-block: 24px;
+  width: 52px;
+  height: 3px;
+  margin-inline: auto;
+  border-top: 1px solid black;
+}
+
+header {
+  width: 100%;
+  height: 72px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: white;
+
+  a {
+    color: #212529;
+    transition: 150ms ease-in-out;
+    
+    &:hover {
+      color: #F4623A;
+    }
+  }
+
+  .container {
+    width: 80%;
+    height: 100%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+
+    .left {
+      a {
+        font-size: 20px;
+      }
+    }
+
+    .right {
+      ul {
+        display: flex;
+        li {
+          padding-inline-start: 10px;
+          
+          &:not(:last-of-type) {
+              padding-inline: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.hero {
+  background-image: url('https://startbootstrap.github.io/startbootstrap-creative/assets/img/bg-masthead.jpg');
+  height: 100dvh;
+  position: relative;
+
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(92, 77, 66, 0.7);
+  }
+
+  .hero_container {
+    width: 768px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    h1 {
+      font-size: 56px;
+      font-weight: 500;
+      line-height: 1.2;
+    }
+
+    
+
+    p {
+      font-size: 18px;
+      color: rgba(255, 255, 255, 0.75);
+      margin-bottom: 48px;
+    }
+
+    a {
+      color: white;
+      background-color: #F4623A;
+      padding: 20px 36px;
+      border-radius: 100vmax;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 600;
+      transition: 150ms ease-in-out;
+
+      &:hover {
+        background-color: #CF5331;
+      }
+    }
+  }
+}
+
+.about {
+  background-color: #F4623A;
+  color: white;
+  padding-block: 128px;
+
+  .about_container {
+    width: 768px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      font-size: 32px;
+      font-weight: 500;
+    }
+
+    p {
+      margin-bottom: 24px;
+    }
+
+    a {
+      color: black;
+      background-color: white;
+      padding: 20px 36px;
+      border-radius: 100vmax;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 600;
+      transition: 150ms ease-in-out;
+
+      &:hover {
+        background-color: #D3D4D5;
+      }
+    }
+  }
+}

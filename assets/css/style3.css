@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+header {
+  width: 100%;
+  height: 72px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: white;
+
+  a {
+    color: black;
+    transition: 150ms ease-in-out;
+    
+    &:hover {
+      color: #F4623A;
+    }
+  }
+
+  .container {
+    width: 80%;
+    height: 100%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+
+    .left {
+      a {
+        font-size: 20px;
+      }
+    }
+
+    .right {
+      ul {
+        display: flex;
+        li {
+          padding-inline-start: 10px;
+          
+          &:not(:last-of-type) {
+              padding-inline: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.hero {
+  background-image: url('https://startbootstrap.github.io/startbootstrap-creative/assets/img/bg-masthead.jpg');
+  height: 100dvh;
+  position: relative;
+
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(92, 77, 66, 0.7);
+  }
+
+  .hero_container {
+    width: 768px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    h1 {
+      font-size: 56px;
+      font-weight: 500;
+      line-height: 1.2;
+    }
+
+    .divider {
+      margin-block: 24px;
+      background-color: #F4623A;
+      width: 52px;
+      height: 3px;
+      margin-inline: auto;
+      border-top: 1px solid black;
+    }
+
+    p {
+      font-size: 18px;
+      color: rgba(255, 255, 255, 0.75);
+      margin-bottom: 48px;
+    }
+
+    a {
+      color: white;
+      background-color: #F4623A;
+      padding: 20px 36px;
+      border-radius: 100vmax;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 600;
+      transition: 150ms ease-in-out;
+
+      &:hover {
+        background-color: #CF5331;
+      }
+    }
+  }
+}
+.about {
+  background-color: #F4623A;
+}
+.about_container {
+  width: 768px;
+  height: 80vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+
+
+
+  h2 {
+    font-size: 32px;
+    font-weight: 500;
+  }
+  .divider {
+    margin-block: 24px;
+    background-color: white;
+    width: 52px;
+    height: 3px;
+    margin-inline: auto;
+    border-top: 1px solid black;
+  }
+  p {
+    font-size: 16px;
+    text-align: center;
+  }
+  a {
+    font-size: 13.6px;
+    text-transform: uppercase;
+    background-color: white;
+    color: black;
+    padding: 20px 36px;
+    border-radius: 100vmax;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 150ms ease-in-out;
+
+    &:hover {
+      background-color: #d9dbdd;
+    }
+    
+  }
+}
+.services {
+  background-color: white;
+
+}
+.services_container {
+  width: 768px;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 10px;
+
+
+  h2 {
+    font-size: 25;
+    color: #212529;
+    
+  }
+
+  .divider {
+    margin-block: 24px;
+    background-color: #F4623A;
+    width: 52px;
+    height: 3px;
+    margin-inline: auto;
+    border-top: 1px solid black;
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  h3 {
+    font-style: calc(12);
+    font-size: 20px;
+    color: #212529;
+  }
+
+  p {
+    font-size: 16px;
+    color: #6C757D;
+    /* padding: 16px; */
+  }
+
+
+  .heart{
+    width: 38px;
+    height: 38px;
+    color: #F4623A;
+    line-height: 1.5;
+  }
+  .diamond{
+    width: 38px;
+    height: 38px;
+    color: #F4623A;
+    line-height: 1.5;
+  }
+   .earth {
+    width: 38px;
+    height: 38px;
+    color: #F4623A;
+    line-height: 1.5; 
+  } 
+  .laptop {
+    width: 38px;
+    height: 38px;
+    color: #F4623A;
+    line-height: 1.5;
+  }
+}
